@@ -8,7 +8,11 @@ Para compilar el proyecto con el server de angular se hizo con las siguientes ve
 Angular-cli 10.2.4
 Angular 10.2.5
 
-npm 8.3.1
+npm 8.3.1             --------------------------------------------------------------
+
+Tambien directamente se puede cargar el directorio victor-practice que se encuentra en 
+/dist/victor-practice este directorio contiene los archivos compilados para ver la aplicación. 
+Solo es necesario cargarlo en un ambiente de servidor local o servidor como tal.  
 
 ## Development server
 
