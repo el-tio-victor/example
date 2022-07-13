@@ -1,1 +1,14 @@
-<p>empleados works!</p>
+<section class='main-empleados'>
+    <button (click)="showForm()"> Add</button>
+    <div *ngIf="view_form" class="cont-form">
+        <div class="d-flex" [formGroup]="Request">
+            <input placeholder="name" formControlName="name" type="text">
+            <input placeholder="last name"  formControlName="last_name" type="text">
+            <input formControlName="birthday" max="{{today}}" type="date">
+            <button *ngIf="Request.status=='VALID'"  (click)="send()">Guardar</button>
+        </div>
+
+    </div>
+    <table id="datatable">
+    </table>
+</section>

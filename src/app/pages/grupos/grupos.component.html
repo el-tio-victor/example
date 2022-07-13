@@ -1,1 +1,38 @@
-<p>grupos works!</p>
+<section class="d-flex bg-green">
+    <div
+        cdkDropList
+        #groupsList="cdkDropList"
+        [cdkDropListData]="groups"
+        [cdkDropListConnectedTo]="[groupListDetail]"
+        (cdkDropListDropped)="drop($event)"
+        class="border groups-list m-1">
+        <div class="card"
+            *ngFor="let item of groups"    
+            cdkDrag
+        >
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{item.name}}
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div 
+    cdkDropList
+    #groupListDetail="cdkDropList"
+    [cdkDropListData]="groupDetail"
+    [cdkDropListConnectedTo]="[groupsList]"
+    (cdkDropListDropped)="drop($event)"
+    class="border group-detail m-1">
+        <div class="card"
+            *ngFor="let item of groupDetail"    
+            cdkDrag
+        >
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{item.name}}
+                </h5>
+            </div>
+        </div>
+    </div>
+</section>
