@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.4.
 
+#Extra Anotaciones personales ********************************************************
+
+Para compilar el proyecto con el server de angular se hizo con las siguientes versiones
+Angular-cli 10.2.4
+Angular 10.2.5
+
+npm 8.3.1
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
