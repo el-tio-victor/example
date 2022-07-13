@@ -64,9 +64,7 @@ export class GruposComponent implements OnInit {
     console.log(event)
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-      console.log('if');
     } else {
-      console.log('else');
       transferArrayItem(
         event.previousContainer.data,
         event.container.data,
@@ -75,7 +73,6 @@ export class GruposComponent implements OnInit {
       );
 
       console.log(this.groupDetail);
-      this.addGroupArrF(1,'lalo');
       console.log(this.groupDetailF);
     }
   }
