@@ -10,6 +10,13 @@ Angular 10.2.5
 
 npm 8.3.1             --------------------------------------------------------------
 
+Despues de descargar el proyecto será necesario instalar las dependencias ya que ellas
+no se incluyen en el repositorio
+comando...
+npm install
+
+---
+
 Tambien directamente se puede cargar el directorio victor-practice que se encuentra en 
 /dist/victor-practice este directorio contiene los archivos compilados para ver la aplicación. 
 Solo es necesario cargarlo en un ambiente de servidor local o servidor como tal.  
